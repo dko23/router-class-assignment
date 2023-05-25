@@ -1,32 +1,60 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from './images/calendly.png'
+
 
 function Navbar() {
   return (
-      <div>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-    <Link to='/'> <a class="navbar-brand" href="#">Jupiter</a></Link>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-           <Link to='/'><a class="nav-link active" aria-current="page">Home</a></Link>
-          </li>
-          <li class="nav-item">
-          <Link to='./about'><a class="nav-link">About</a></Link>
-          </li>
-          <li class="nav-item">
-          <Link to='services'><a class="nav-link">Services</a></Link>
-          </li>
-        </ul>
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-md">
+          <nav className="navbar navbar-expand-lg navbar-light bg-white">
+            <Link to="/">
+              <a className="navbar-brand">
+                <img src={logo} alt="Calendly Logo" className="calendly-logo" />
+              </a>
+            </Link>
+
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav mr-auto font-weight-bold">
+                <li className="nav-item">
+                  <Link to="/" className="nav-link">
+                    Individual
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/about" className="nav-link">
+                    Team
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/services" className="nav-link">
+                    Enterprises
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
     </div>
-  </nav>
-    </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
+
+
+
+

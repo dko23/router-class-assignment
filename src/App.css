@@ -1,8 +1,81 @@
-.App {
-  text-align: center;
-}
-
-.page {
-  font-weight: bold;
-}
-
+body{
+  color: rgb(11, 53, 88);
+  }
+  .navbar{
+    
+  }
+  
+  
+  .calendly-logo{
+    height: 50px;
+    width: 250px;
+  }
+  
+  
+  .tech-logos{
+  
+    list-style-type: none;
+  }
+  
+  .ebay{
+    height: 50px;
+    width: 110px;
+  }
+  .dropbox{
+    height: 50px;
+    width: 50px;}
+  
+  .compass{
+    height: 50px;
+    width: 110px;
+  }
+  .twilio{
+    height: 30px;
+    width: 80px;
+  }
+  
+  .banner{
+  margin-top: 80px;
+    background-color: rgb(37, 150, 190);
+    margin-bottom: 150px;
+  }
+  .calendly-cards{
+  margin-bottom: 150px;
+  }
+  
+  .enterprise-card{
+  height: 200px;
+  width: 200px;
+margin-left: 90px;
+  }
+  
+  .enterprise-button{
+    color: white;
+  }
+  
+  .individual-banner{
+    color: white;
+    background-image: url(https://w0.peakpx.com/wallpaper/163/132/HD-wallpaper-blue-yellow-cubes-yellow-background.jpg);
+    height: 250px;
+  }
+  
+  .individual-button{
+    background-color: white;
+  }
+  .power-teams{
+  
+  margin-bottom: 70px;
+  }
+  
+  .team-button{
+    
+  }
+  
+  .sales-card{
+  
+  margin-bottom: 70px;
+  }
+  .easy-ahead{
+    list-style-type: none;
+    margin-bottom: 70px;
+  }
